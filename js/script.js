@@ -28,3 +28,20 @@ for (let i = 0; i < 5; i++) {
 }
 console.log(numbers);
 
+let second = 30;
+
+const countDown = setInterval(() => {
+    if (second === 0) {
+        clearInterval(countDown);
+        // Nascondi i numeri
+        randomNumber.innerHTML = '';
+        // Mostra il form
+        form.classList.remove('d-none'); 
+    // Decrementa il countdown
+    }
+    else {
+        outputCountDown.innerHTML = --second; 
+    }
+}, 1000);
+
+
