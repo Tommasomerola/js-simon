@@ -13,3 +13,20 @@ const outputMessage = document.getElementById('message');
 const form = document.getElementById('answers-form');
 const numField = document.querySelectorAll('input');
 
+// FUNCTION
+let numbers = [];
+
+for(let i = 0; i < 5; i++) {
+
+    let number = Math.floor(Math.random() * 50) + 1;
+    let newItems = document.createElement("li")
+    if(numbers.includes(number)){
+        i--;
+    }
+    else{
+        number.push(number);
+        newItems.innerText = parseInt(numbers[i]);
+        randomNumber.appendChild(newItems);
+    }
+};
+console.log(numbers);
